@@ -1,0 +1,24 @@
+rails generate scaffold User first_name:string last_name:string email:string phone:integer street_one:string street_two:string city:string zipcode:integer age:integer thumbnail:string active:boolean username:string password:string reset_password_token:string reset_password_sent_at:datetime sign_in_count:integer last_sign_in_at:datetime confirmation_token:string confirmation_token_sent_at:datetime newsletter_opt_in:boolean
+
+rails generate model Product name:string description:text price:float thumbnail:string company_id:integer color:string active:boolean sku:string link:string original_price:float brand:string department:string upc:string manufacturer:string source_id:integer
+
+
+rails generate scaffold Comment product_id:integer commentor_id:integer post:text active:boolean
+
+rails generate model Collection name:string active:boolean
+
+rails generate model Like user_id:integer product_id:integer company_id:integer
+
+rails generate model Save user_id:integer product_id:integer
+
+rails generate model Event name:string active:boolean
+
+rails generate model ProductImage product_id:integer url:string size:string active:boolean
+
+rails generate model Category name:string active:boolean level:integer
+
+rails generate model Company name:string active:boolean
+
+rails generate model Source name:string active:boolean
+
+rails generate model LoginAttempt user_id:integer attempts:integer

@@ -1,0 +1,97 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.number_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :street_one %><br />
+    <%= f.text_field :street_one %>
+  </div>
+  <div class="field">
+    <%= f.label :street_two %><br />
+    <%= f.text_field :street_two %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br />
+    <%= f.number_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :thumbnail %><br />
+    <%= f.text_field :thumbnail %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :reset_password_token %><br />
+    <%= f.text_field :reset_password_token %>
+  </div>
+  <div class="field">
+    <%= f.label :reset_password_sent_at %><br />
+    <%= f.datetime_select :reset_password_sent_at %>
+  </div>
+  <div class="field">
+    <%= f.label :sign_in_count %><br />
+    <%= f.number_field :sign_in_count %>
+  </div>
+  <div class="field">
+    <%= f.label :last_sign_in_at %><br />
+    <%= f.datetime_select :last_sign_in_at %>
+  </div>
+  <div class="field">
+    <%= f.label :confirmation_token %><br />
+    <%= f.text_field :confirmation_token %>
+  </div>
+  <div class="field">
+    <%= f.label :confirmation_token_sent_at %><br />
+    <%= f.datetime_select :confirmation_token_sent_at %>
+  </div>
+  <div class="field">
+    <%= f.label :newsletter_opt_in %><br />
+    <%= f.check_box :newsletter_opt_in %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
