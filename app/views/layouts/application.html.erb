@@ -9,6 +9,11 @@
     <meta property="og:image" content="http://www.trendcheckout.com/assets/fb_profile.png"/>
     <meta property="og:site_name" content="Trend Checkout"/>
     <meta property="fb:app_id" content="530869970319194"/>
+    <meta property="og:description" content="Our signature bookmark derived from the de Young's unique architecture and copper exterior. Measures 5 3/4'' x 1 1/4''. FAMSF Exclusive." />
+    <meta property="og:type" content="product" />
+    <meta property="og:price:amount" content="15.00" />
+    <meta property="og:price:currency" content="USD" />
+    <meta property="og:availability" content="instock" />
     <title><%= content_for?(:title) ? yield(:title) : "Trend" %></title>
 
     <%= csrf_meta_tags %>
@@ -308,15 +313,29 @@
             <p><span class="attribute_name">Shipping:</span><span class="attribute_value"> This item is also available for shipping to select countries outside the U.S.</span></p>
 
           </div>
-          <div class="modal_product_social">
-            <div class="fb-like" data-href="http://www.trendcheckout.com" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
 
-          </div>
         </div>
       </div>
       <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        <button class="btn btn-primary">Save changes</button>
+        <div class="modal_product_social">
+          <div class="twitter-button">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://www.trendcheckout.com" data-text="Checkout Latest Styles">Tweet</a>
+          </div>
+          <div class="fb-like" data-href="http://www.trendcheckout.com" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+          <div class="pinterest-button">
+              <a href="//pinterest.com/pin/create/button/
+            ?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F
+            &media=http://fashplanet.com/wp-content/uploads/2013/01/one-shoulder-Black-Prom-Dr.jpg
+            &description=Checkout this cool style"
+                 data-pin-do="buttonPin"
+                 data-pin-config="above">
+                <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
+              </a>
+          </div>
+          <div class="close-button">
+            <button class="btn-mini" data-dismiss="modal" aria-hidden="true">Close</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -418,6 +437,9 @@
           fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
   </script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+
 
   </body>
 </html>

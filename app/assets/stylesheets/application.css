@@ -70,6 +70,30 @@
     padding-left: 10px;
 }
 
+.twitter-button {
+    float: right;
+}
+
+.fb-like {
+    float: right;
+    padding-right: 20px;
+}
+
+.pinterest-button {
+    float: right;
+    padding-right: 20px;
+    margin-top: -20px;
+
+}
+
+
+.close-button {
+    float: right;
+    padding-right: 20px;
+}
+
+
+
 
 
 
