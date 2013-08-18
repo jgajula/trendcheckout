@@ -26,3 +26,89 @@
 #myCarousel {
     margin-top: 50px;
 }
+
+.modal_display_image {
+    width: 450px!important;
+    float: left!important;
+}
+
+.modal-body {
+    max-height: 550px!important;
+}
+
+#myModal {
+    width: 850px!important;
+}
+
+.modal_thumbnail {
+    float: left;
+}
+
+.modal_content {
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.modal_product_title a{
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.modal_product_price p {
+    font-size: 17px;
+    color: #b12704!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.attribute_name {
+    font-weight: bold;
+}
+
+.attribute_value {
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
