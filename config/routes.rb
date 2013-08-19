@@ -1,9 +1,13 @@
 Trend::Application.routes.draw do
+  get "product/index"
+
   resources :comments
 
   resources :users
 
   get "welcome/index"
+
+  match "products/:id" => "product#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

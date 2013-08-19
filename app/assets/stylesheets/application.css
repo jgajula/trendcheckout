@@ -92,7 +92,25 @@
     padding-right: 20px;
 }
 
+.modal_product_thumbnail {
+    float: left;
+    width: 80px;
+}
 
+footer {
+    border-top: 1px solid #cecece;
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 10px;
+}
+
+footer a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 
 

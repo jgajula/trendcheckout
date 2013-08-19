@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+
+$(document).ready(function(){
+
+    $('.modal_product_thumbnail').click(function(){
+        var clicked_id = this.id.replace('modal_thumbnail_','');
+        var clicked_image_url = "/assets/home/products/"+clicked_id+"_big.jpg";
+        $('.modal_display_image').attr("src",clicked_image_url);
+    });
+});
