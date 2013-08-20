@@ -23,4 +23,12 @@ $(document).ready(function(){
         var clicked_image_url = "/assets/home/products/"+clicked_id+"_big.jpg";
         $('.modal_display_image').attr("src",clicked_image_url);
     });
+
+    $('.product-page-thumbnail').click(function(){
+        var clicked_id = this.id.replace('product_thumbnail_','');
+        var clicked_image_url = "/assets/home/products/"+clicked_id+"_big.jpg";
+        $('.product-page-display-image').attr("src",clicked_image_url);
+    });
+
+    $('#productReview').raty({score: 3.26});
 });
